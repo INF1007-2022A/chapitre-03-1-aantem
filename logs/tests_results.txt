@@ -4,19 +4,7 @@ test_square_root (__main__.TestExercice) ... ok
 test_to_celsius (__main__.TestExercice) ... ok
 test_to_degrees (__main__.TestExercice) ... FAIL
 test_to_farenheit (__main__.TestExercice) ... ok
-test_to_radians (__main__.TestExercice) ... ERROR
-
-======================================================================
-ERROR: test_to_radians (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 61, in test_to_radians
-    output = [exercice.to_radians(*v) for v in values]
-  File "test_exercice.py", line 61, in <listcomp>
-    output = [exercice.to_radians(*v) for v in values]
-  File "/home/runner/work/chapitre-03-1-aantem/chapitre-03-1-aantem/exercice.py", line 17, in to_radians
-    return math.radian(angle_degs+(angle_mins+angle_secs/60)/60)
-AttributeError: module 'math' has no attribute 'radian'
+test_to_radians (__main__.TestExercice) ... ok
 
 ======================================================================
 FAIL: test_to_degrees (__main__.TestExercice)
@@ -39,4 +27,4 @@ First differing element 0:
 ----------------------------------------------------------------------
 Ran 7 tests in 0.001s
 
-FAILED (failures=1, errors=1)
+FAILED (failures=1)
